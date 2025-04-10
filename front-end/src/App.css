@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  /*font-family: 'Segoe UI', sans-serif;*/
+  font-family: "National Park", sans-serif;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.container {
+  padding: 0 2rem 0 2rem;
+}
+
+
+.add-note {
+  background-color: #ffd52e;
+  color: #222;
+  padding: 5%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-note h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.add-note input,
+.add-note textarea {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  background-color: #fff;
+}
+
+.add-note button {
+  padding: 0.7rem 1.5rem;
+  background-color: #333333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+  /*margin: 1rem;*/
+  width: fit-content;
+}
+
+.add-note button:hover {
+  background-color: #ffd52e;
+}
+
+.notes-section h3 {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #fff;
+  gap: 0.5rem;
+}
+
+.notes-section small {
+  color: #fff;
+  font-weight: 500;
+}
+
+.notes-grid {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+}
+
+.notes-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.notes-grid::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+/* Note Card */
+.note-card {
+  flex: 0 0 auto;
+  width: 240px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.note-card h4 {
+  margin-top: 0;
+  color: #1e2a54;
+}
+
+.note-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.note-card small {
+  display: block;
+  margin-top: 0.8rem;
+  color: #6b7280;
+}
+
+.note-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.note-actions button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #222;
+  margin-left: 0.3rem;
+}
+
+.note-actions button:hover {
+  color: #ffd52e;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  background: #001f3f;
+  position: relative;
+  bottom: 0;
+  color: white;
+  height: 40px;
+  padding: 10px;
+
+  h4{
+    margin-top: 10px;
+  }
+}
