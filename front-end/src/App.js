@@ -69,7 +69,7 @@ function App() {
                         placeholder="Take a note..."
                         rows="4"
                         value={content}
-                        style={{resize:'vertical'}}
+                        style={{resize: 'vertical'}}
                         onChange={(e) => setContent(e.target.value)}
                     ></textarea>
                     <button onClick={handleAddNote}>Add Note</button>
